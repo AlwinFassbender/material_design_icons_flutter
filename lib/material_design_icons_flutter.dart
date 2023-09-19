@@ -8149,11 +8149,6 @@ class MdiIcons {
     return res.substring(0, 1).toLowerCase() + res.substring(1);
   }
 
-  static IconData? fromString(String key) {
-    final iconName = MdiIcons.toCamelCase(key);
-    return iconMap[iconName];
-  }
-
   IconData? operator [](String key) {
     final iconName = MdiIcons.toCamelCase(key);
     return iconMap[iconName];
